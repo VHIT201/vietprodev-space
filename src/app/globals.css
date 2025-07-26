@@ -146,7 +146,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-}
+} 
 
 @layer base {
   * {
@@ -169,4 +169,19 @@
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@layer utilities {
+  .bg-modal-black {
+    background-color: rgba(0,0,0,0.4);
+  }
+  .bg-dark {
+    background-color: var(--background);
+  }
+  .text-white {
+    color: var(--foreground);
+  }
+  .text-black {
+    color: var(--background);
+  }
 }
